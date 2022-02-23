@@ -1,0 +1,29 @@
+.number {
+    display: inline-block;
+    background-color: red;
+    border-radius: 50px;
+    padding: 15px 20px;
+	position:absolute;
+    right:-20px;
+    top:-10px;
+    font-size: 20px;
+	overflow: hidden;
+	box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.07) inset;
+	span {
+		position:relative;
+		z-index: 2;
+		color:white;
+	}
+	&::before {
+		content: "";
+		height:40px;
+		width: 80px;
+		filter:blur(3px);
+		background: radial-gradient(farthest-corner at 30% 25%, transparent, transparent, rgba(255,255,255,0.6),  transparent);
+		display: block;
+		position:absolute;
+		transform: skewX(-47deg);
+		top:-3px;
+		right:-10px;
+	}
+}

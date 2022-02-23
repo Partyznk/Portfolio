@@ -1,0 +1,77 @@
+.outline {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+	filter:invert(100%);
+	width: 55px;
+	height: 44px;
+	border-radius: 15px;
+	border: 2px solid black;
+	box-sizing: border-box;
+	font-size: 20px;
+	background-color: #29529f;
+	right:25px;
+	top:3px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	&:hover {
+		box-shadow: 5px 5px 5px rgba(0,0,0,0.3), -5px -5px 5px rgba(0,0,0,0.3);
+		cursor:pointer;
+		.cart {
+		animation-name: movin;
+		animation-duration: 0.3s;
+		animation-timing-function: ease-in-out;
+		}
+		.float {
+			animation-name: movinfloat;
+			animation-duration: 0.3s;
+			animation-timing-function: ease-in-out;
+		}
+        &::before {
+            content:"Click here to 'pay' for your order";
+			white-space: nowrap;
+            position:absolute;
+			text-align: center;
+            filter:invert(100%);
+            z-index: 9;
+            display: flex;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            font-size: 13px;
+			font-style: italic;
+            border-radius: 15px;
+            right:70px;
+            width:195px;
+            height:30px;
+            padding:5px;
+			margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 5px 5px 5px rgba(112, 224, 112, 0.3), -5px -5px 5px rgba(112, 224, 112,0.3);
+            animation-name: banner;
+            animation-duration:0.2s;
+        }
+	}
+	.cart {
+		position:fixed;
+		float:right;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 7;
+		transform: scaleX(-1);
+		font-size: 2em;
+	}
+	.float {
+		position:absolute;
+		z-index: 8;
+		display: inline-block;
+		filter:invert(100%);
+		background-color: rgb(112, 224, 112);
+		font-size:13px;
+		top:0px;
+		left: 0px;
+		padding: 2px 6px;
+		border-radius: 50%;
+	}
+}

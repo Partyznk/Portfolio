@@ -1,0 +1,30 @@
+[
+{
+    "section":"pizza",
+    "title": "Four cheese",
+    "ingredients": "Tomato sauce, cheese",
+    "price":13,
+    "url":"pizzatrial.jpg"
+},
+{
+    "section":"pizza",
+    "title": "Salami",
+    "ingredients": "Tomato sauce, cheese, salami",
+    "price":16,
+    "url":"pizzatrial.jpg"
+},
+{
+    "section":"pizza",
+    "title": "Four cheese",
+    "ingredients": "Tomato sauce, cheese",
+    "price":13,
+    "url":"pizzatrial.jpg"
+},
+{
+    "section":"pizza",
+    "title": "Four cheese",
+    "ingredients": "Tomato sauce, cheese",
+    "price":13,
+    "url":"pizzatrial.jpg"
+}
+]

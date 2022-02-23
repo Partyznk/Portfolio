@@ -1,0 +1,33 @@
+@keyframes shiny {
+	0% {top:5px;}
+	50% {top:40px;}
+	51% {top:-40px;}
+	100% {top:5px;}
+}
+
+@keyframes movin {
+	0% {}
+	15% {right:-3px;}
+	75% {left:-4px;}
+	100% {}
+}
+
+@keyframes movinfloat {
+	0% {}
+	15% {left:3px;}
+	75% {left:-1px;}
+	100% {}
+}
+
+@keyframes banner {
+	0% {display: none; width: 0px;}
+	10% {width:30px;}
+	100% {width: 200px;}
+}
+
+@keyframes pizzaing {
+	0% {position: absolute;left:-60px;}
+	25%{transform: rotate(180deg);}
+	50% {left:95%; transform: rotate(360deg);}
+	100% {left:-60px;}
+}

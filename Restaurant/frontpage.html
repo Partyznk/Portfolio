@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pizzeria</title>
+	<link rel="icon" href="./style/pizzafinal.png" type="image/icon type">
+	<link rel="stylesheet" href="./style/frontpage.css">
+</head>
+<body>
+	<span class="outline"><span class="float" id="float">0</span><span class="cart">
+		<ion-icon name="cart-outline"></ion-icon>
+	</span></span>
+	<div class="header">
+		<div class="travellingpizza"><img src="C:\Users\pressrelations MD\Desktop\Personal\Programming practice\Portfolio\Restaurant project\style\travellingpizza.png" alt="pizza"></div>
+	</div>
+	<div class="menu">
+		<a href="#">Order </a><a href="#">About </a>
+	</div>
+	<br>
+	<div class="dropdown">
+		<button class="filter" id="filter">
+			<span class="filter__icon">
+			<ion-icon name="filter-outline"></ion-icon>
+			</span>
+			<span class="filter__text">Filter</span>
+		</button>
+		<div class="dropdowncontent" id="dropdowncontent">
+			<div class="selector">	
+				<label><input type="checkbox">Random future ingredient</label>
+			</div>
+		</div>
+	</div>
+	<div class="ad" id="adcontent">
+		<div class="adtext">	
+			<p>[Here is an ad, to make the experience a bit more authentic]</p><button onclick="document.getElementById('adcontent').style.display = 'none';">X</button>
+		</div>
+		<div class="advideo">
+			<a href="https://www.bomba.md/ro/category/aparate-de-uz-casnic-electrocasnice-aspiratoare/">
+				<video width="200" height="200" autoplay muted loop>
+					<source src="vacuum.mp4" type="video/mp4">
+					<source src="vacuum.ogg" type="video/ogg">
+  					The browser does not support the video tag. Here is the source: https://www.youtube.com/watch?v=hMAuPRabMtg
+				</video>
+			</a>
+		</div>
+	</div>
+	<div class="section pizza">	
+		<div class="sectiontitle">	
+			<h1>Pizzas</h1>
+			<hr class="shortie">
+			<hr class="longie">
+		</div>
+		<div class="elements">
+			<div class="pizza">
+				<div class="number"><span>1</span></div>
+				<div class="container_1"></div>
+				<h4>Pizza, very tasty</h4>
+				<p class="ingredients">
+					Mushrooms, cheese, tomato sauce
+				</p>
+				<div class="addtocart" id="addtocart_1">
+					<button type="button" class="button">
+						<span class="button__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="button__text">Add to cart</span>
+					</button>
+					<div class="cartdropdown" id="cartdropdown_1">
+						<span id="minus_1">–</span><p id="index_1">0</p><span id="plus_1">+</span>
+					</div>
+				</div>
+				<p class="price">
+					$12.99
+				</p>
+			</div>
+			<div class="pizza">
+				<div class="number"><span>2</span></div>
+				<div class="container_2"></div>
+				<h4>Pizza, very tasty</h4>
+				<p class="ingredients">
+					Mushrooms, cheese, tomato sauce
+				</p>
+				<div class="addtocart" id="addtocart_2">
+					<button type="button" class="button">
+						<span class="button__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="button__text">Add to cart</span>
+					</button>
+					<div class="cartdropdown" id="cartdropdown_2">
+						<span id="minus_2">–</span><p id="index_2">0</p><span id="plus_2">+</span>
+					</div>
+				</div>
+				<p class="price">
+					$12.99
+				</p>
+			</div>
+			<div class="pizza">
+				<div class="number"><span>3</span></div>
+				<div class="container_3"></div>
+				<h4>Pizza, very tasty</h4>
+				<p class="ingredients">
+					Mushrooms, cheese, tomato sauce
+				</p>
+				<div class="addtocart" id="addtocart_3">
+					<button type="button" class="button">
+						<span class="button__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="button__text">Add to cart</span>
+					</button>
+					<div class="cartdropdown" id="cartdropdown_3">
+						<span id="minus_3">–</span><p id="index_3">0</p><span id="plus_3">+</span>
+					</div>
+				</div>
+				<p class="price">
+					$12.99
+				</p>
+			</div>
+			<div class="pizza">
+				<div class="number"><span>4</span></div>
+				<div class="container_4"></div>
+				<h4>Pizza, very tasty</h4>
+				<p class="ingredients">
+					Mushrooms, cheese, tomato sauce
+				</p>
+				<div class="addtocart" id="addtocart_4">
+					<button type="button" class="button">
+						<span class="button__icon">
+							<ion-icon name="cart-outline"></ion-icon>
+						</span>
+						<span class="button__text">Add to cart</span>
+					</button>
+					<div class="cartdropdown" id="cartdropdown_4">
+						<span id="minus_1">–</span><p id="index_4">0</p><span id="plus_4">+</span>
+					</div>
+				</div>
+				<p class="price">
+					$12.99
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="section drinks">
+		<div class="sectiontitle">	
+			<h1>Drinks</h1>
+			<hr class="shortie">
+			<hr class="longie">
+		</div>
+		<div class="elements">
+
+		</div>
+	</div>	
+
+	<div class="section sidedishes">
+		<div class="sectiontitle">	
+			<h1>Side dishes</h1>
+			<hr class="shortie">
+			<hr class="longie">
+		</div>
+		<div class="elements">
+
+		</div>
+	</div>
+	</body>
+	<br>
+	<footer>
+
+	</footer>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="./style/script.js"></script>
+</body>
+</html>

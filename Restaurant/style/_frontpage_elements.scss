@@ -1,0 +1,181 @@
+.section {	
+	.sectiontitle {
+		margin-left: 10px;
+		margin-bottom:25px;
+		margin-top: 45px;
+		display: block;
+		h1 {
+			display: inline-block;
+			margin-bottom:-10px;
+			margin-top:-3px;
+			color:#c59337;
+		}
+		hr {
+			margin-left:0px;
+			background-color: black;
+			border-radius: 4px;
+		}
+		.shortie {
+			border:1.1px solid #c59337;
+			background-color:#c59337;
+			width:150px;
+		}
+		.longie {
+			border:1.3px solid #D6AD60;
+			background-color:#D6AD60;
+			width:250px;
+		}
+	}
+	.elements {
+		font-size: 16px;
+		display: grid;
+		justify-items: start;
+		grid-template-columns: auto auto auto;
+		box-sizing: border-box;
+		grid-column-gap: 25px;
+		grid-row-gap: 50px;
+		justify-items: center;
+		align-items: center;
+		width:100%;
+		[class^="pizza"] {
+			position:relative;
+			background-color: mintcream;
+			border-radius: 10px;
+			display: block;
+			box-sizing: border-box;
+			border:5px solid rgba(255, 255, 255, 0);
+			.price {
+				position:relative;
+				display: inline-block;
+				left:30px;
+				top:-10px;
+				color:rgb(112, 224, 112);
+				text-shadow: 0px 0px #000000;
+				font-size:18px;
+				z-index:2;
+				box-shadow: 0px 15px 5px 2px rgba(0,0,0,0.05);
+				border-radius: 50%;
+				padding: 5px 15px;
+			}
+			&:hover {
+				box-shadow: 5px 0px 8px 0 rgba(0, 0, 0, 0.2), -5px 2px 8px 0 rgba(0, 0, 0, 0.2);
+				box-sizing: border-box;
+				border: 3px solid #ffff00 ;
+				margin: 2px;
+				.price {
+					text-shadow: 0px 0px 1.5px rgb(93, 184, 93);
+					box-shadow: 0px 15px 5px 3px rgba(0,0,0,0.05);
+				}
+				div.number::before {
+					animation-name:shiny;
+					animation-duration: 0.35s;
+				}
+				[class^="container"] {
+					background-size: 330px 330px;
+					background-position: 25% 25%;
+					box-shadow: 5px 5px 15px rgba(0,0,0,0.3) inset, -5px -5px 15px rgba(0,0,0,0.3) inset;
+				}
+			}
+			h4, p {
+				font-family: Georgia, 'Times New Roman', Times, serif;
+			}
+			h4 {
+				position:relative;
+				margin-left: 10px;
+			}
+			[class^="container"]  {
+				border-radius: 10px;
+				width: 310px;
+				height: 310px;
+				display: block;
+				background-image: url("pizzatrial.jpg");
+				background-size: 310px 310px;
+				background-repeat: no-repeat;
+				overflow: hidden;
+				transition: background-size 0.7s, background-position 0.7s;
+			}
+			.ingredients {
+				margin-left: 10px;
+				font-size: 0.9em;
+			}
+			.addtocart {
+				height: 40px;
+				display: inline-block;
+				[class^="button"] {
+					display: inline-flex;
+					height: 40px;
+					padding: 0;
+					margin: 10px;
+					outline: none;
+					overflow: hidden;
+					font-size: 16px;
+					font-weight: 500;
+					cursor: pointer;
+					border: none;
+					outline: none;
+					border-radius: 15px;
+					background-color: rgb(226, 205, 135);
+					&:hover {
+						box-shadow: 0px 0px 8px rgb(112, 224, 112);
+						.button__text {
+							box-shadow: none;
+						}
+					}
+					&:active {
+						box-shadow: 0px 0px 8px 2px rgb(76, 230, 76);;
+					}
+					.button__text:hover {
+						background: rgb(202, 183, 121);
+					}
+					.button__text,
+					.button__icon {
+					display: inline-flex;
+					align-items: center;
+					padding: 0 15px;
+					margin: 0;
+					}
+					.button__text {
+						border-radius: 0px 15px 15px 0px;
+					}
+					.button__icon {
+						font-size: 1.3em;
+						background: rgba(0, 0, 0, 0.04);
+						border-radius: 15px 0px 0px 15px;
+					}
+				}
+				.cartdropdown{
+					position:absolute;
+					left:5px;
+					display: none;
+					justify-content:center;
+					background-image: linear-gradient(to right, rgba(241, 217, 171, 0.8), rgba(181, 241, 101, 0.8));
+					border:1px solid black;
+					padding: 10px;
+					height: 25px;
+					border-radius: 25px;
+					box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05) inset;
+					box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.2);
+					span, p {
+						padding: 5px 10px; 
+						margin: 10px;
+						background-color: rgb(226, 205, 135);
+						align-self: center;
+						border: 0.5px solid black;
+						box-shadow: 5px 5px 5px 5px rgba(255, 255, 255, 0.2) inset;
+						box-shadow: 5px 1px 5px 0px rgba(0, 0, 0, 0.2);
+						border-radius: 20px;
+						cursor:default;
+						user-select: none;
+					}
+					span:hover {
+						background-color: rgb(202, 183, 121);
+						cursor:pointer;
+					}
+					span:active {
+						box-shadow: 0px 0px 8px 1px rgb(76, 230, 76);;
+					}
+				}
+			}
+		}
+	}
+}
